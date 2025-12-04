@@ -324,7 +324,7 @@ Defines should be all-caps and snake-case.
 
 Comments should have a space afer the "//" unless they are used to comment-out code.
 
-Todo comments should be formatted as follows "// TODO - Content"
+Todo comments should be formatted as follows `// TODO - Content`
 ```cs
 // This is a comment about a piece of code
 
@@ -348,6 +348,7 @@ Use namespaces when making something that is generic enough to become it's own l
 ## Reflection
 
 Reflection is not be be used for auto-formatting data structures for serialization. Data must be manually formatted for clean looking data. Key naming conventions may be different depenting on the desired format (ex. "m_targetPosition" will become "target-position" in YAML and JSON style guides).
+
 
 
 
