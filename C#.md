@@ -72,11 +72,11 @@ Unless using *Unity*, public properties and methods must be on top, followed by,
 
 ### Structs/Small Classes:
 
-*Small Class* denotes a Class that is used in the classic "struct" form but is to be allocated on the heap and should be passed by refernce.
+*Small Class* denotes a Class that is used in the classic "struct" form but is to be allocated on the heap and should be passed by reference.
 
 *Small Classes* may contain public non-static variables. These structures should only have a small number of helper-methods.
 
-Variable must be at the top of the structure with helper-methods below.
+Variables must be at the top of the structure with helper-methods below.
 
 ## Method Calling
 
@@ -329,3 +329,4 @@ Use namespaces when making something that is generic enough to become it's own l
 ## Reflection
 
 Reflection is not be be used for auto-formatting data structures for serialization. Data must be manually formatted for clean looking data. Key naming conventions may be different depenting on the desired format (ex. "m_targetPosition" will become "target-position" in YAML and JSON style guides).
+
