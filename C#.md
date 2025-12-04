@@ -193,7 +193,7 @@ public class MyClass
 
 ## Operation Formatting
 
-In the case of multiline math or logic statements, the statement can begin  the operator must be places on the new line ahead of the second value. Parenthesis should be added to show explicit order for clarity (No relying on the order of operations)
+In the case of multiline math or logic statements, the operator must be placed on the new line ahead of the next value. Parenthesis should be added to show explicit order for clarity (No relying on the order of operations)
 
 ```cs
 // Math Statement
@@ -201,10 +201,10 @@ Vector2 squareMagnitude = (positionA.x * positionA.x)
     + (positionA.y * positionB.y);
 
 // Logic Statement
-if (boxA.left < boxB.right
-    && boxA.right > boxB.left
-    && boxA.top > boxB.bottom
-    && boxA.bottom < boxB.top)
+if ((boxA.left < boxB.right)
+    && (boxA.right > boxB.left)
+    && (boxA.top > boxB.bottom)
+    && (boxA.bottom < boxB.top))
 {
     boxA.OnCollision(boxB);
     boxB.OnCollision(boxA);
@@ -254,6 +254,25 @@ m_myList = new List<int>();
 Always prefer "early-out" execution flow. Test for invalid cases and use `return`, `continue`, or `break` skip remaining code.
 
 `goto` is not to be used.
+```cs
+// Avoid this:
+void MyMethod()
+{
+    if (m_isValid)
+    {
+        // Implementation
+    }
+}
+
+// Use this:
+void MyMethod()
+{
+    if (!m_isValid)
+        return;
+
+    // Implementation
+}
+```
 
 ## Switch Statements
 
@@ -329,5 +348,6 @@ Use namespaces when making something that is generic enough to become it's own l
 ## Reflection
 
 Reflection is not be be used for auto-formatting data structures for serialization. Data must be manually formatted for clean looking data. Key naming conventions may be different depenting on the desired format (ex. "m_targetPosition" will become "target-position" in YAML and JSON style guides).
+
 
 
