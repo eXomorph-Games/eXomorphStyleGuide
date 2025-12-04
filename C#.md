@@ -106,7 +106,7 @@ float result = QuadLerp(
 The following rules apply to constructors as well.
 
 ## Code Blocks
-All other code blocks must use Allman style braces. `if` statements acting as a "guard" may forgo braces all together if only a single line. If an `if` or `while` statement is a single line, it must still use braces.
+All other code blocks must use Allman style braces. `if` statements acting as a "guard" may forgo braces all together if only a single line using the keywords `return`, `continue`, or `break`. If an `if` or `while` statement is a single line and does not contain these keywords, it must still use braces.
 
 `else if` and `else` keywords must *not* be placed on the same line as the previous close-brace.
 
@@ -329,4 +329,5 @@ Use namespaces when making something that is generic enough to become it's own l
 ## Reflection
 
 Reflection is not be be used for auto-formatting data structures for serialization. Data must be manually formatted for clean looking data. Key naming conventions may be different depenting on the desired format (ex. "m_targetPosition" will become "target-position" in YAML and JSON style guides).
+
 
