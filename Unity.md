@@ -16,6 +16,7 @@ C# Scripts, Prefabs, and Scenes do not need a suffix.
 |     NRML|Normal Map                  |
 |     DISP|Bump or displacement map    |
 |     SPEC|Speciular Map               |
+|     EMSN|Emission Map                |
 |      AMB|Ambient Occlusion Map       |
 |[TYP]_PSD|Photoshop file              |
 |      MAT|Material                    |
@@ -203,3 +204,4 @@ public MyClass : MonoBehaviour
     }
 }
 ```
+
