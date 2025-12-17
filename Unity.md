@@ -1,4 +1,4 @@
-# eXomorph - C# Language Style Guide
+# eXomorph - Unity Style Guide
 
 This document discribes orginization conventions and how C# code should be formatted and designed for Unity. See the *C# Style Guide* for everything not mentioned here.
 
@@ -204,4 +204,5 @@ public MyClass : MonoBehaviour
     }
 }
 ```
+
 
